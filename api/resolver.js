@@ -38,7 +38,7 @@ function getWeather(term, req, res) {
         date : getDate(),
         icon: response.body.weather[0].icon
     }
-    var html = '<div style="background:#e74c3c;width:130px;height:220px;font-family: Helvetica, Arial, sans-serif;text-align:center;"> \
+    var html = '<div style="background:#e74c3c;width:150px;height:220px;font-family: Helvetica, Arial, sans-serif;text-align:center;"> \
     <img src="http://rageimages.s3.amazonaws.com/weather/'+ results.icon +'.png" style="width:80px;margin:10px"> \
     <div style="color:white"> \
     <h1 style="margin:0">'+ results.temp + '&#176;C</h1> \
