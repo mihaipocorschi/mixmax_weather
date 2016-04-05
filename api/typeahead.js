@@ -25,7 +25,8 @@ module.exports = function(req, res) {
             },
             json : true
         }, sync.defer()));
-    } catch (e) {
+    }
+    catch (e) {
         res.status(500).send('Error');
         return;
     }
@@ -48,8 +49,9 @@ module.exports = function(req, res) {
         res.json([{
             title: '<i>(no results)</i>',
             text: ''
-    }]);
-    } else {
+        }]);
+    }
+    else {
         res.json(results);
     }
 };
